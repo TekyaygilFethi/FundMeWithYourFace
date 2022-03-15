@@ -84,6 +84,7 @@ python -m venv myvenv
 ```bash
 source myvenv/bin/activate
 ```
+NOTE: Your activate may be another folder, find it and enter that path inside of myvenv folder!
 
 
 4. Install the required dependencies from requirements.txt file:
