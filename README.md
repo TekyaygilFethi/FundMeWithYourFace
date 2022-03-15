@@ -80,20 +80,26 @@ git clone https://github.com/TekyaygilFethi/FundMeWithYourFace.git
 python -m venv myvenv
 ```
 
-3. Install the required dependencies from requirements.txt file:
+3. Activate the virtual environment
+```bash
+source myvenv/bin/activate
+```
+
+
+4. Install the required dependencies from requirements.txt file:
 ```bash
 pip install -r requirements.txt
 ```
-4. You must set your users and their images first. To set users and their roles, Please navigate to the Data/Excel/Users.csv file. This csv file contains 3 columns, ID, Name and Role.
+5. You must set your users and their images first. To set users and their roles, Please navigate to the Data/Excel/Users.csv file. This csv file contains 3 columns, ID, Name and Role.
 
 - ID: This column ensures users are not being merged when they have the same name and surname.
 - Name Surname: Name and surname of the user
 - Role: Role of the user
 
 
-5. Add your users and please be careful about ID's. ID column should be **UNIQUE!**
+6. Add your users and please be careful about ID's. ID column should be **UNIQUE!**
 
-6. Add your user images to Data/images folder. Please be careful about naming convetion of images.
+7. Add your user images to Data/images folder. Please be careful about naming convetion of images.
 ```bash
 {Name Surname}_{ID}
 ```
@@ -103,13 +109,13 @@ For instance, fof Fethi Tekyaygil which has ID 1 should have his photo like this
 Fethi Tekyaygil_1.jpg
 ```
 
-7. Navigate to the Brownie Folder, we must compile the sol files in order to work with them.
+8. Navigate to the Brownie Folder, we must compile the sol files in order to work with them.
 ```bash
 >> cd Brownie
 >> brownie compile
 ```
 
-8. For deploying a contract, you must be registered as admin. After that when in Brownie folder in terminal, execute the following command for Rinkeby network:
+9. For deploying a contract, you must be registered as admin. After that when in Brownie folder in terminal, execute the following command for Rinkeby network:
 ```bash
 brownie run scripts/deploy.py --network rinkeby
 ```
