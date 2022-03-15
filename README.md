@@ -23,7 +23,7 @@ To assure the program is working, there are folder structure rules to follow.
 
 ## .env file
 
-In Brownie folder, you can see .env file. This file contains secret information for your Brownie part of your application
+In Brownie folder, create an .env file. This file should contain secret information for your Brownie part of your application
 ```bash
 PRIVATE_KEY=0x{YOUR_PRIVATE_KEY}
 WEB3_INFURA_PROJECT_ID={YOUR_ID}
