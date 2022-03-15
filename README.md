@@ -72,7 +72,7 @@ There are 2 types of authenticated users. One is Admin and the other one is Stan
 
 1. Clone the project
 ```bash
-git clone https://github.com/TekyaygilFethi/FundMewithYourFace.git
+git clone https://github.com/TekyaygilFethi/FundMeWithYourFace.git
 ```
 
 2. First create a virtual environment. Assume we want to give myenv as a venv name.
