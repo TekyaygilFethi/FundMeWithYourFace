@@ -1,0 +1,21 @@
+dependencies:
+  # we are dowloading from github to add chainlink
+  # - <organization/repo>@<version>
+  - smartcontractkit/chainlink-brownie-contracts@0.4.0
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+compiler:
+  solc:
+    remappings:
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.4.0"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0"
+dotenv: .env
+networks:
+  rinkeby:
+    eth_usd_price_feed: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
+    verify: False
+  development:
+    verify: False
+  ganache-local:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}
