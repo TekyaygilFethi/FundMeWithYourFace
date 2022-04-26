@@ -108,7 +108,7 @@ pip install -r requirements.txt
 ```bash
 {Name Surname}_{ID}
 ```
-For instance, fof Fethi Tekyaygil which has ID 1 should have his photo like this:
+For instance, for Fethi Tekyaygil which has ID 1 should have his photo like this:
 
 ```bash
 Fethi Tekyaygil_1.jpg
